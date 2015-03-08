@@ -1,4 +1,5 @@
 to_do = []
+import time
 exit=0
 while (exit==0):
     input = raw_input("cmd>>")
@@ -36,4 +37,19 @@ while (exit==0):
         print "delete with no space deletes all"
         print "(it asks before done)"
         print "list"
-        print "lists all items (ignore the ['1' '2']s)"
+        print "lists all items (ignore the ['' ''])"
+        print "That's just how Python formats it"
+        print "credits"
+        print "Display credits"
+        print "help"
+        print "Display help"
+    elif (lst[0]=="credits"):
+        print "copyright ® 2015"
+        time.sleep(0.5)
+        print "softwarematic inc all rights reserved"
+        time.sleep(0.5)
+        print "Thanks to python"
+        time.sleep(0.5)
+        print "And thanks a lot to Breakout Mentors"
+    else:
+        print "Unknown command try help for a list of comands"
