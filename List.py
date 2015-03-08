@@ -8,6 +8,7 @@ while (exit==0):
             print "Item ", (lst[1]), " alredy exists"
         else:
             to_do.append(lst[1])
+            print "Successfuly added 1 item"
     elif (lst[0]=="delete"):
         if (len(lst)==1):
             ask = raw_input("Are you sure (y/n)")
@@ -27,3 +28,12 @@ while (exit==0):
             print (to_do)
     elif (lst[0]=="exit"):
         exit=1
+    elif (lst[0]=="help"):
+        print "add [item to add]"
+        print "adds the item after the space"
+        print "delete [item to delete]"
+        print "deletes the item after the space"
+        print "delete with no space deletes all"
+        print "(it asks before done)"
+        print "list"
+        print "lists all items (ignore the ['1' '2']s)"
